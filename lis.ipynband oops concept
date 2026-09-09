@@ -1,0 +1,1326 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN/fqApdynUvf65WH77eT+M",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Dharshini1701/priyadharshini/blob/main/lis.ipynband%20oops%20concept\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit=[\"applle\",\"orange\",\"banana\",\"mango\"]\n",
+        "fruit.sort()\n",
+        "print(fruit)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W6AF4HZcPc1B",
+        "outputId": "8cf18e21-6b2f-4840-f882-aa74a6f8308e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['applle', 'banana', 'mango', 'orange']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "exQKQRdgnyaL",
+        "outputId": "91cbb033-094a-4836-b9c5-fc05ea441786"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "largest: 6\n",
+            "smallest: 2\n"
+          ]
+        }
+      ],
+      "source": [
+        "num=[2,3,4,5,6]\n",
+        "largest=max(num)\n",
+        "smallest=min(num)\n",
+        "print('largest:',largest)\n",
+        "print('smallest:',smallest)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers=[1,2,3,4,5,6,4,33,2]\n",
+        "print('original:',numbers)\n",
+        "print('duplicate:',numbers)"
+      ],
+      "metadata": {
+        "id": "JGIeQxsroXG6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6a0e2014-7e72-4a8b-f074-1e19de5d5383"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "original: [1, 2, 3, 4, 5, 6, 4, 33, 2]\n",
+            "duplicate: [1, 2, 3, 4, 5, 6, 4, 33, 2]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers=[10,30,49,58]\n",
+        "reversed_numbers=numbers[::-1]\n",
+        "print(\"original:\",numbers)\n",
+        "print(\"numbers:\",reversed_numbers)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I_QPskjcRQEJ",
+        "outputId": "a436b7a0-eea7-439e-f49e-e3e25dfa22d4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "original: [10, 30, 49, 58]\n",
+            "numbers: [58, 49, 30, 10]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers=[1,2,3,4,5,6]\n",
+        "element=2\n",
+        "count=numbers.count(element)\n",
+        "print(f\"element {element} count {count} times\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gCJOV8NVRxuV",
+        "outputId": "f9207551-1dbf-481e-883f-4812c52716f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "element 2 count 1 times\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=[1,2,3,4,54]\n",
+        "list2=[23,4,5,6,7]\n",
+        "merged=list1+list2\n",
+        "merged.sort()\n",
+        "print(\"merged:\",merged)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "et2Sp3bjRxTQ",
+        "outputId": "cb84e419-272e-432c-ea19-e1b8736b07d3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "merged: [1, 2, 3, 4, 4, 5, 6, 7, 23, 54]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers=[10,20,30,40]\n",
+        "unique_sorted=sorted(set(numbers),reverse=True)\n",
+        "print(\"second largest:\",unique_sorted[1])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jT8yA8wPWV9o",
+        "outputId": "5b631dec-52f3-4a7d-ea01-e0506107fa5e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "second largest: 30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers=list(range(1,21))\n",
+        "evens=[n for n in numbers if n % 2==0]\n",
+        "print(\"even numbers:\",evens)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UkLLNLrGW7Uq",
+        "outputId": "5725d6b1-a4ae-4d1c-cc7c-65fa1eeaa70e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "even numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=[1,2,3,4,5]\n",
+        "list2=[3,4,5,6,7]\n",
+        "common=[x for x in list1 if x in list2]\n",
+        "print(\"common elements:\",common)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-gQPaw9nPVw6",
+        "outputId": "c59f6475-00f4-45e9-d5eb-63123c8a2d28"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "common elements: [3, 4, 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t=[1,2,3,4,5,6,7,7]\n",
+        "print(t[0])\n",
+        "print(t[::2])\n",
+        "print(t[1:3])\n",
+        "print(t[::-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HAXDQbFxRP3i",
+        "outputId": "badb0b8f-b40b-4784-f8e2-ad277ad4c442"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "[1, 3, 5, 7]\n",
+            "[2, 3]\n",
+            "[7, 7, 6, 5, 4, 3, 2, 1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mark=45,67,89,90,89\n",
+        "total=sum(mark)\n",
+        "avg=total/len(mark)\n",
+        "print(\"total:\",total)\n",
+        "print(\"average:\",avg)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w6zDPzUFR1EJ",
+        "outputId": "e30cef43-3d62-4f55-cafd-e2a9ed0a50f2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "total: 380\n",
+            "average: 76.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student=(\"alice\",20,\"cs\",\"chennai\")\n",
+        "name,age,course,city=student\n",
+        "print(\"name:\",name)\n",
+        "print(\"age:\",age)\n",
+        "print(\"course:\",course)\n",
+        "print(\"city:\",city)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wcwXS93nS6R1",
+        "outputId": "b21cd475-a925-4e02-83c7-b0b226a848cd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name: alice\n",
+            "age: 20\n",
+            "course: cs\n",
+            "city: chennai\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t1=1,2,3,4,7\n",
+        "t2=3,4,5,6,7\n",
+        "num=t1+t2\n",
+        "repe=t1*3\n",
+        "print(\"num:\",t1+t2)\n",
+        "print(\"repe:\",t1*3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zt_V5qSzUL7d",
+        "outputId": "84d9c66c-f9fe-456e-f319-73bda9a10a17"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "num: (1, 2, 3, 4, 7, 3, 4, 5, 6, 7)\n",
+            "repe: (1, 2, 3, 4, 7, 1, 2, 3, 4, 7, 1, 2, 3, 4, 7)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t1=10,20,30,40,50,50,40\n",
+        "print(\"count(50)\",t1.count(50))\n",
+        "print(len(t1))\n",
+        "print(\"last index of 40:\",t1.index(40))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LqkMlsKDU05g",
+        "outputId": "424e7efb-beda-4bd4-c7f7-0d443bdc1b55"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "count(50) 2\n",
+            "7\n",
+            "last index of 40: 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst=[1,2,3,4,4]\n",
+        "tup=tuple(lst)\n",
+        "print(\"list -> tuple:\",tup)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "362L4cN1ViD4",
+        "outputId": "0d976ab7-6270-46e9-caca-4bddbc66f91e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "list -> tuple: (1, 2, 3, 4, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup=(10,20,40)\n",
+        "lst=list(tup)\n",
+        "print(\"tup -> list:\",lst)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CFMJssDrW4ud",
+        "outputId": "526cc146-548e-4464-82a6-962074557636"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "tup -> list: [10, 20, 40]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a,b=5,10\n",
+        "print(\"before:\",a,b)\n",
+        "a,b=b,a\n",
+        "print(\"after:\",a,b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jyQsLQgsXesB",
+        "outputId": "4332f05e-0b23-485c-cc56-709ac39c3225"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "before: 5 10\n",
+            "after: 10 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "coordinates={(0,0),(1,3),(4,7),}\n",
+        "for i,(x,y) in enumerate(coordinates):\n",
+        "  print(f\"point {i-1}:x={x},y{y}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hO6UW-DhX8a9",
+        "outputId": "0f8b3b6f-9377-480d-b148-f701fbc05a73"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "point -1:x=1,y3\n",
+            "point 0:x=4,y7\n",
+            "point 1:x=0,y0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=[10,20,40,56]\n",
+        "list1.remove(max(list1))\n",
+        "second_largest=max(list1)\n",
+        "print(second_largest)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vGSKNti_aA7O",
+        "outputId": "95336ef5-4b0b-4e74-dbac-6f38b4b3ace8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list=range(1,20)\n",
+        "for n in list:\n",
+        "  if n % 2!=0:\n",
+        "     print(n)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZHlKsd9Obp59",
+        "outputId": "48f2b04e-41a2-4a95-a8dc-778e8c2c0f1b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n",
+            "11\n",
+            "13\n",
+            "15\n",
+            "17\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a={1,2,3,4,5}\n",
+        "b={6,7,8,9,55}\n",
+        "print(\"union:\",a|b)\n",
+        "print(\"intersection:\",a&b)\n",
+        "print(\"difference:\",a-b)\n",
+        "print(\"difference:\",b-a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X9h6rh2jFbtR",
+        "outputId": "bf0c6892-67e2-4b84-8510-69da7b1d9723"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "union: {1, 2, 3, 4, 5, 6, 7, 8, 9, 55}\n",
+            "intersection: set()\n",
+            "difference: {1, 2, 3, 4, 5}\n",
+            "difference: {6, 7, 8, 9, 55}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a={1,2,3}\n",
+        "b={1,2,3,4,5}\n",
+        "print(\"a subset of a:\",a.issubset(b))\n",
+        "print(\"b superset of a:\",b.issuperset(a))\n",
+        "print(\"disjoint set:\",a.isdisjoint({3,7}))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mZHloZ5lGsmF",
+        "outputId": "4da7b81b-1ce2-45ab-bc01-9dea9c7bb3e8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a subset of a: True\n",
+            "b superset of a: True\n",
+            "disjoint set: False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst=[1,2,3,4,5,6,7,1,2,3]\n",
+        "unique=sorted(set(lst))\n",
+        "print(\"original:\",lst)\n",
+        "print(\"unique:\",unique)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G91iFmrmIjby",
+        "outputId": "1d932d66-7b01-4155-b90b-9bb953ff14b0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "original: [1, 2, 3, 4, 5, 6, 7, 1, 2, 3]\n",
+            "unique: [1, 2, 3, 4, 5, 6, 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s={10,20,30,40,50}\n",
+        "s.add(59)\n",
+        "print(\"after add of 50:\",s)\n",
+        "s.discard(35)\n",
+        "print(\"afetr discard of 30:\",s)\n",
+        "s.remove(20)\n",
+        "print(\"after remove of 20:\",s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0aZEH7j-JJzk",
+        "outputId": "218aaa06-817a-4bd1-c227-bc566698f4f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "after add of 50: {50, 20, 40, 10, 59, 30}\n",
+            "afetr discard of 30: {50, 20, 40, 10, 59, 30}\n",
+            "after remove of 20: {50, 40, 10, 59, 30}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a={1,2,3,4,5,6}\n",
+        "b={5,6,7,8,9,8}\n",
+        "sym=a.symmetric_difference(b)\n",
+        "print(\"symmetric difference:\",sym)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DHDZrKniJ6rX",
+        "outputId": "32cc16f1-2d58-4bbc-8ae6-b91698f3ed20"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "symmetric difference: {1, 2, 3, 4, 7, 8, 9}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fs=frozenset({1,2,3,4,5})\n",
+        "print(\"frozenset:\",fs)\n",
+        "print(\"3 is present in fs:\",3 in fs)\n",
+        "print(\"length:\",len(fs))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2772-km1J6n5",
+        "outputId": "eccfb164-1f28-4d07-a6d4-b39f658a63e3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "frozenset: frozenset({1, 2, 3, 4, 5})\n",
+            "3 is present in fs: True\n",
+            "length: 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student = {'name':'John','age':21,'grade':'a'}\n",
+        "print('Name :', student['name'])\n",
+        "print('Age :', student.get('age'))\n",
+        "print('Grade :', student.get('grade'))\n",
+        "print('Keys:', list(student.keys()))\n",
+        "print('Values:', list(student.values()))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ecrUb74yScat",
+        "outputId": "8c853333-742d-4281-d646-c0b356be6053"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Name : John\n",
+            "Age : 21\n",
+            "Grade : a\n",
+            "Keys: ['name', 'age', 'grade']\n",
+            "Values: ['John', 21, 'a']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list=[10,20,30,40,50]\n",
+        "total=sum(list)\n",
+        "print(total)"
+      ],
+      "metadata": {
+        "id": "ADv5pk9cyPC-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list=[10,20,30,40]\n",
+        "list[0]=50\n",
+        "print(list)"
+      ],
+      "metadata": {
+        "id": "ODfyX8HJ2N0R"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1={'a':1,'b':2,'c':3}\n",
+        "dict2={'c':99,'d':4,'e':5}\n",
+        "merged={**dict1,**dict2}\n",
+        "print(\"dict1:\",dict1)\n",
+        "print(\"dict2:\",dict2)\n",
+        "print(\"merged:\",merged)"
+      ],
+      "metadata": {
+        "id": "qb99hDWP2qBR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "oops concept"
+      ],
+      "metadata": {
+        "id": "8QyAv4RXwtbM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "  def __init__(self, owner, balance=0):\n",
+        "    self.owner=owner\n",
+        "    self.balance=balance\n",
+        "  def deposit(self,amount):\n",
+        "     self.balance += amount\n",
+        "     print(f\"deposited{amount}.balance:{self.balance}\")\n",
+        "  def withdraw(self,amount):\n",
+        "      if amount>self.balance:\n",
+        "        print(\"insufficient funds\")\n",
+        "      else:\n",
+        "        self.balance -= amount\n",
+        "        print(f\"withdraw(amount.balance:{self.balance})\")\n",
+        "  def display(self):\n",
+        "      print(f\" account owner:{self.owner},balance:{self.balance}\")\n",
+        "acc=BankAccount(\"alice:\",10000)\n",
+        "acc.deposit(45000)\n",
+        "acc.withdraw(30000)\n",
+        "acc.display()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "_SX79pPyPNb0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "  def display(self):\n",
+        "      print(\"hello world:\")\n",
+        "s=Student()\n",
+        "s.display()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "H575RAuZVrMa"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Employee:\n",
+        "  def show(self):\n",
+        "    print(\"python\")\n",
+        "s=Employee()\n",
+        "s.show()\n"
+      ],
+      "metadata": {
+        "id": "Fv593LviV4M9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Car:\n",
+        "  def __init__(self,brand):\n",
+        "    self.brand=brand\n",
+        "  def show(self):\n",
+        "    print(\"car brand:\",self.brand)\n",
+        "s=Car(\"bmw\")\n",
+        "s.show()\n"
+      ],
+      "metadata": {
+        "id": "-1LxWyQ2Yer7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "  def __init__(self):\n",
+        "    self.name=input(\"enter your name\")\n",
+        "    self.age=input(\"enter your age\")\n",
+        "  def show(self):\n",
+        "    print(\"name:\",self.name)\n",
+        "    print(\"age:\",self.age)\n",
+        "s=Student()\n",
+        "s.show()"
+      ],
+      "metadata": {
+        "id": "U9UC7rzlaB8l"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Calculator:\n",
+        "  def __init__(self):\n",
+        "    self.a=int(input(\"enter a:\"))\n",
+        "    self.b=int(input(\"enter b:\"))\n",
+        "  def add (self):\n",
+        "    print(\"sum:\",self.a+self.b)\n",
+        "s=Calculator()\n",
+        "s.add()"
+      ],
+      "metadata": {
+        "id": "UN_Rn6wlcEnS"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Number:\n",
+        "  def __init__(self):\n",
+        "    self.n=int(input(\"enter you number:\"))\n",
+        "  def check(self):\n",
+        "   if self.n%2==0:\n",
+        "    print(\"even\")\n",
+        "   else:\n",
+        "    print(\"odd\")\n",
+        "s=Number()\n",
+        "s.check()\n"
+      ],
+      "metadata": {
+        "id": "5L7n4ZgMYxov"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "    def __init__(self):\n",
+        "        self.name = input(\"Enter your name: \")\n",
+        "        self.tamil = int(input(\"Tamil mark: \"))\n",
+        "        self.english = int(input(\"English mark: \"))\n",
+        "        self.science = int(input(\"Science mark: \"))\n",
+        "        self.social = int(input(\"Social mark: \"))\n",
+        "\n",
+        "    def result(self):\n",
+        "        total = self.tamil + self.english + self.science + self.social\n",
+        "        average = total / 4\n",
+        "\n",
+        "        print(\"Name:\", self.name)\n",
+        "        print(\"Total:\", total)\n",
+        "        print(\"Average:\",average)\n",
+        "\n",
+        "s = Student()\n",
+        "s.result()"
+      ],
+      "metadata": {
+        "id": "PoOTFdlsXSdB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "  def __init__(self):\n",
+        "    self.average=int(input('enter you average:'))\n",
+        "  def grade(self):\n",
+        "    if self.average>=90:\n",
+        "     print(\"grade A\")\n",
+        "    elif self.average>= 80:\n",
+        "      print(\"grade B\")\n",
+        "    elif self.average>=70:\n",
+        "      print(\"garde C\")\n",
+        "    else:\n",
+        "      print(\"grade d\")\n",
+        "s=Student()\n",
+        "s.grade()"
+      ],
+      "metadata": {
+        "id": "wDnJeGXJXSsF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Employee:\n",
+        "  def __init__(self):\n",
+        "    self.name=input(\"enter your name:\")\n",
+        "    self.salary=int(input(\"enter your salary\"))\n",
+        "  def calculate(self):\n",
+        "    self.hra=self.salary * 0.10\n",
+        "    self.da= self.salary * 0.05\n",
+        "    self.total=self.salary +self.hra +self.da\n",
+        "  def display(self):\n",
+        "    print(\"employee name:\",self.name )\n",
+        "    print(\"salary:\",self.salary)\n",
+        "    print(\"hra:\",self.hra)\n",
+        "    print(\"da:\",self.da)\n",
+        "    print(\"total:\",self.total)\n",
+        "\n",
+        "s=Employee()\n",
+        "s.calculate()\n",
+        "s.display()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "rdW1QmgBaFU-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Rectangle:\n",
+        " def __init__(self):\n",
+        "   self.length=int(input(\"enter your value:\"))\n",
+        "   self.breadth=int(input(\"enter your value\"))\n",
+        " def display(self):\n",
+        "    print(\"area:\",self.area)\n",
+        "    print(\"perimeter\",self.perimeter)\n",
+        "s=Rectangle()\n",
+        "s.display()"
+      ],
+      "metadata": {
+        "id": "TXUxS5w3gDsx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "    def __init__(self):\n",
+        "        self.name = input(\"Enter name: \")\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(\"Name:\", self.name)\n",
+        "\n",
+        "s = Student()\n",
+        "s.display()"
+      ],
+      "metadata": {
+        "id": "7c3A6yq9KBgf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Car:\n",
+        "    def __init__(self, car):\n",
+        "        self.car = car\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(\"Car Created:\", self.car)\n",
+        "\n",
+        "c = Car(\"BMW\")\n",
+        "c.display()\n"
+      ],
+      "metadata": {
+        "id": "RczWCDjUKTMo"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Animal:\n",
+        "    def sound(self):\n",
+        "        print(\"Dog barks\")\n",
+        "\n",
+        "a = Animal()\n",
+        "a.sound()"
+      ],
+      "metadata": {
+        "id": "GsfEWnuLL5l_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from os import rename\n",
+        "from io import BufferedRandom\n",
+        "class Laptop:\n",
+        "  def __init__(self,brand,ram):\n",
+        "    self.brand=brand\n",
+        "    self.ram=ram\n",
+        "  def show(self):\n",
+        "    print(\"brand\")"
+      ],
+      "metadata": {
+        "id": "kBRik3FfMONr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "  def __init__(self,owner,balance=0):\n",
+        "    self.owner=owner\n",
+        "    self.__balance=balance\n",
+        "  def deposit(self,amount):\n",
+        "    if amount<=0:\n",
+        "      print(\"deposit amount must be positive\")\n",
+        "      return\n",
+        "    self.__balance += amount\n",
+        "    print(f\"deposited{amount}.new balance:{self.__balance}\")\n",
+        "  def withdraw(self,amount):\n",
+        "    if amount>self.__balance:\n",
+        "      print(\"insufficient funds\")\n",
+        "      return\n",
+        "    self.__balance-=amount\n",
+        "    print(f\" withdraw{amount}.new balance:{self.__balance}\")\n",
+        "  def get_balance(self):\n",
+        "    return self.__balance\n",
+        "account=BankAccount(\"ravi,1000\")\n",
+        "account.deposit(500)\n",
+        "account.withdraw(2000)\n",
+        "account.withdraw(300)\n",
+        "print(\"final balance:\",account.get_balance())\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "udq0fNmnSRqj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Employee:\n",
+        "  def __init__(self,name,salary):\n",
+        "    self.name=name\n",
+        "    self.__salary=salary\n",
+        "  def salary(self):\n",
+        "     return self.__salary\n",
+        "  def salary(self,value):\n",
+        "      if value < 0:\n",
+        "          raise valueError(\"salary cannot be negative\")\n",
+        "      self.__salary=Value\n",
+        "emp=Employee(\"Anita\",50000)\n",
+        "print(\"initial salary:\",emp.salary)\n",
+        "emp.salary=60000\n",
+        "print(\"updated salary:\",emp.salary)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "-ZZ6Htm4biP3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "  def __init__(self):\n",
+        "    self.__mark=80\n",
+        "  def show(self):\n",
+        "    print(\"mark:\",self.__mark)\n",
+        "s=Student()\n",
+        "s.show()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "3rB22KiSbiVd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "    def __init__(self):\n",
+        "        self.__mark = 80\n",
+        "\n",
+        "    def add_mark(self, mark):\n",
+        "        self.__mark = self.__mark + mark\n",
+        "\n",
+        "    def show(self):\n",
+        "        print(\"Mark:\", self.__mark)\n",
+        "\n",
+        "s = Student()\n",
+        "\n",
+        "s.add_mark(10)\n",
+        "\n",
+        "s.show()"
+      ],
+      "metadata": {
+        "id": "PH2SNxtl3Q-J"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "\n",
+        "    def __init__(self):\n",
+        "        self.__mark = 50\n",
+        "\n",
+        "    def add_mark(self, mark):\n",
+        "         self.__mark=self.__mark+mark\n",
+        "\n",
+        "    def show(self):\n",
+        "        print(\"Mark:\", self.__mark)\n",
+        "\n",
+        "s = Student()\n",
+        "\n",
+        "s.add_mark(20)\n",
+        "\n",
+        "s.show()"
+      ],
+      "metadata": {
+        "id": "kPFY__ni41ft"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Bank:\n",
+        "  def __init__(self):\n",
+        "    self.__balance=1000\n",
+        "  def deposit(self,amount):\n",
+        "     self.__balance= self.__balance+amount\n",
+        "  def show(self):\n",
+        "    print(\"balance:\",self.__balance)\n",
+        "b=Bank()\n",
+        "b.deposit(500)\n",
+        "b.show()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "zSFioiRo67YV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(len(\"python\"))\n",
+        "print(len([1,2,3,44]))\n",
+        "print(len((19,20)))"
+      ],
+      "metadata": {
+        "id": "NOkqGt8a9G6y"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "students = []\n",
+        "\n",
+        "def add_student(roll, name, age, marks):\n",
+        "    student = {\n",
+        "        'roll': roll,\n",
+        "        'name': name,\n",
+        "        'age': age,\n",
+        "        'marks': marks\n",
+        "    }\n",
+        "\n",
+        "    students.append(student)\n",
+        "    print(\"Student added successfully!\")"
+      ],
+      "metadata": {
+        "id": "hhJM3SQJX304"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
